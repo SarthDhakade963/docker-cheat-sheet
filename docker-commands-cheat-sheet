@@ -80,3 +80,38 @@ docker network connect <network> <container> - Attach container to network
 
 
 
+## Docker Compose
+
+docker-compose up - Start services from docker-compose.yml
+
+docker-compose down - Stop and remove services
+
+docker-compose ps - Show running services
+
+docker-compose logs - View logs for all services
+
+
+
+
+## System Cleanup
+
+docker system diff - Show disk usage
+
+docker system prune - Remove all unused data
+
+docker container prune - Remove stopped containers
+
+docker image prune - Remove unused images
+
+
+## Advanced/Debugging
+
+docker stats - Live resource usage (CPU, RAM, network)
+
+docker top <container> - Show running processes inside container
+
+docker history <image> - Show image layer history
+
+docker save/docker load - Export/Import images as tar files
+
+docker export/docker import - Export/Import container filesystems as tar
