@@ -53,3 +53,30 @@ docker update <container> --restart unless-stopped - Set restart policy
 
 
 
+## Volumes + Storage
+
+docker volume create <name> - Create volume
+
+docker volume ls - List volumes
+
+docker volume inspect <name> - Volume Details
+
+docker volume rm <name> - Delete Volume
+
+docker volume prune - Remove unused local volumes
+
+
+
+## Docker Networks
+
+docker networks ls - List networks
+
+docker network create <name> - Create custom network
+
+docker network inspect <name> - Network details
+
+docker network connect <network> <container> - Attach container to network
+
+
+
+
