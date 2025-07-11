@@ -1,0 +1,55 @@
+#!/bin/bash
+
+## Docker Basic Commands
+docker version - Check installed Docker version
+
+docker info - System-wide Docker information
+
+docker help - Help for all Docker commands
+
+
+
+## Images Management
+docker pull <image> - Download an image from Docker Hub
+
+docker images - List local images
+
+docker rmi <image-id> - Remove an Image
+
+docker build -t <image>:<tag> . - Build a new image from Dockerfile
+. represents the location of Dockerfile which is in current directory
+
+docker tag <image> <repo>:<tag> - Tag an image for pushing
+
+docker push <repo>:<tag> - Push an image to registry (dockerhub)
+
+
+## Containers Lifecycle
+docker run <image> - Run a container interactively
+
+docker run -d <image> - Run in detached mode (in background)
+
+docker run -p <host>:<container> - Map ports
+
+docker ps - List running containers
+
+docker ps -a - List all containers (including stopped)
+
+docker stop <container> - Stop a running container
+
+docker start <container> - Start a stopped container
+
+docker restart <container> - Restart container
+
+docker rm <container> - Remove container
+
+docker logs <container> - View container logs
+
+docker exec -it <container> bash - Get interactive shell into running container
+
+docker inspect <container> - View detailed container config
+
+docker update <container> --restart unless-stopped - Set restart policy
+
+
+
